@@ -1,3 +1,6 @@
+PROMPT_START='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:'
+PROMPT_END='\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1=$PROMPT_START$PROMPT_END
 
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
